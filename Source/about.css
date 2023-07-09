@@ -10,7 +10,7 @@
 .section {
     width: 100%;
     min-height: 110vh;
-    background-color: #fceae9;
+    background: #777 url(/images/bg2.png);
 }
 
 .section a {
@@ -48,7 +48,6 @@
 
 .content h3 {
     margin-top: 20px;
-    color: #555;
     font-size: 21px;
 }
 

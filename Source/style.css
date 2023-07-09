@@ -56,11 +56,11 @@
 }
 
 .dark {
-    background: url(images/bg1.png);
+    background: url(/images/bg1.png);
 }
 
 .indigo {
-    background: #8d3939 url(images/bg2.png);
+    background: #8d3939 url(/images/bg2.png);
 }
 
 .jobTitle {

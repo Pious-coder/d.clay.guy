@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #111;
+    overflow: hidden;
+}
+
+.salute {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.saluteTextcontainer {
+    flex: 3;
+}
+
+.saluteText {
+    color: #333;
+    font-size: 60vw;
+    font-family: 'Sen', sans-serif;
+    cursor: default;
+}
+
+.saluteImgContainer {
+    flex: 1;
+}
+
+.saluteImg {
+    width: 100%;
+    height: 100%;
+}
+
+
+.nameContainer {
+    position: relative;
+    height: 100vh;
+    background-color: #8d3939;
+}
+
+.name {
+    font-size: 20vw;
+    color: #333;
+    cursor: default;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.jobTitleContainer {
+    height: 100vh;
+}
+
+.dark {
+    background: url(images/bg1.png);
+}
+
+.indigo {
+    background: #8d3939 url(images/bg2.png);
+}
+
+.jobTitle {
+    font-size: 10vw;
+    color: #333;
+    cursor: default;
+    line-height: 100vh;
+}
+
+.second {
+    font-size: 9vw;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+    padding: 0px 100px;
+}
+
+.projectsTitle {
+    font-size: 10vw;
+    color: #333;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.project.project:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.projectImg {
+    flex: 1;
+}
+
+.projectImg img{
+    width: 300px;
+}
+
+.projectDetails {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.projectTitle {
+    font-size: 7vw;
+    color: #333;
+}
+
+.projectDesc {
+    font-size: 20px;
+    color: #333;
+    text-align: justify;
+    line-height: 40px;
+}
+
+.projectButton {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #555;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.projectButton::after {
+    content: "View Info";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    color: #222;
+}
+
+.projectButton:hover.projectButton::after {
+    transform: translateX(100%);
+}
+
+.overviewContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.overviewTitle {
+    font-size: 100px;
+    color: #333;
+    cursor: default;
+}
+
+.think {
+    width: 250px;
+}
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    margin-right: 90px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.about:hover {
+    cursor: pointer;
+}
+
+.about::after {
+    content: "See Me";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+    color: #222;
+}
+
+.about:hover.about::after {
+    transform: translateX(100%);
+}
+
+.socialMedia i {
+    font-size: 5vw;
+    color: #555;
+    margin-right: 90px;
+    cursor: pointer;
+}
+
+.socialMedia i:hover {
+    color: #333;
+}
+
+.credit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222;
+    font-size: 23px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.credit a{
+    margin-left: 5px;
+    color: #222;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.credit span {
+    background-color: #8d3939;
+    padding: 5px 8px;
+    border-radius: 7px;
+}
+
+@media  (max-width:1024px) {
+
+    .projects {
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .project {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .project.project:nth-child(2n) {
+        flex-direction: column;
+    }
+
+    .projectImg {
+        transform: none !important;
+    }
+
+    .overviewTitle {
+        text-align: center;
+        font-size: 10vw;
+    }
+
+    .overviewTitle h1 {
+        font-size: 30px;
+    }
+
+    .socialMedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about {
+        margin-right: 30px;
+    }
+
+    .socialMedia i {
+        margin-right: 30px;
+    }
+}
